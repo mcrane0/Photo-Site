@@ -1,3 +1,38 @@
 /* import oxygen font */
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
 
+body {
+    background-color:#ccc;
+}
+
+p {
+    font-family: 'Oxygen', sans-serif;
+    font-weight:bold;
+
+    text-transform:uppercase;
+    letter-spacing:5px;
+
+    /* vw sets the font/text size based on the width of the viewport (browser window) */
+    font-size: 2vw;
+
+    text-align:center;
+    border-bottom:5px solid #666;
+    padding-bottom:10px;
+
+    /* (22.5 * 2) + (1.25 * 2) */
+    width:47.5%;
+    /* "margin: auto" centers the P element horizontally inside of body element */
+    margin:auto;
+}
+
+img {
+    /* all images combined = 90% (22.5 * 4) */
+    width:22.5%;
+    /* all margins combined = 10% (1.25 * 8) (account for margin on left and right) */
+    margin:1.25%;
+
+    /* float CSS property places element on the left or right side of its container allowing text or 
+       Inline/Inline-Block elements to wrap around it. The element is removed from the normal document 
+       flow. Also removes the space between img elements. */
+    float:left;
+}
